@@ -1,6 +1,9 @@
 /// Represents an error encountered during the execution of a GraphQL operation.
 ///
 ///  - SeeAlso: [The Response Format section in the GraphQL specification](https://facebook.github.io/graphql/#sec-Response-Format)
+
+import Foundation
+
 public struct GraphQLError: Error {
   private let object: JSONObject
   

@@ -1,3 +1,5 @@
+import Foundation
+
 public func whenAll<Value>(_ promises: [Promise<Value>], notifyOn queue: DispatchQueue) -> Promise<[Value]> {
   return Promise { (fulfill, reject) in
     let group = DispatchGroup()
