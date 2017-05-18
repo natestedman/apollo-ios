@@ -1,5 +1,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "Apollo"
+    name: "Apollo",
+    exclude: [
+        "Sources/ApolloSQLite",
+        "Tests"
+    ]
 )
